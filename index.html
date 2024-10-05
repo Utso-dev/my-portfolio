@@ -37,6 +37,7 @@
           <div class="">
             <a href="/"
               ><img
+              
                 src="./images/utso.png"
                 width="50"
                 height="60"
@@ -50,7 +51,7 @@
         </div>
 
         <div class="nav-right-container">
-          <ul class="nav-items-container">
+          <ul class="nav-items-container"  id="nav-items-container">
             <li class="nav-items">
               <a href="#home" class="nav-items-links">Home</a>
             </li>
@@ -79,7 +80,15 @@
         <div>
           <button class="account">Account</button>
         </div>
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </div>
+      </div>
+     
+
     </nav>
 
     <!-- Hero Section -->
@@ -95,7 +104,7 @@
         </div>
 
         <div class="hero-right">
-          <h2 class="title">Utso Sarkar</h2>
+          <h2 class="title">I am Utso Sarkar</h2>
           <p class="description">
             Utso Sarkar is a front-end developer, I have a passion for creating
             visually appealing and user-friendly websites, applications, and
@@ -541,5 +550,14 @@
         </div>
       </div>
     </footer>
+    <script>
+      // scripts.js
+document.getElementById("hamburger").addEventListener("click", function () {
+  this.classList.toggle("open");
+  const navItems = document.getElementById("nav-items-container");
+  navItems.classList.toggle("open");
+});
+
+    </script>
   </body>
 </html>
